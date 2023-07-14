@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="Theme.MusicPlayer" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#1DB954</item> <!-- Spotify green -->
+        <item name="colorPrimaryVariant">#1DB954</item> <!-- Spotify green (same as colorPrimary) -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White -->
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#191414</item> <!-- Black -->
+        <item name="colorSecondaryVariant">#191414</item> <!-- Black (same as colorSecondary) -->
+        <item name="colorOnSecondary">#FFFFFF</item> <!-- White -->
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>

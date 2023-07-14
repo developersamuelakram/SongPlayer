@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+<RelativeLayout android:id="@+id/songListRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackgray"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_marginBottom="2dp"
+        android:layout_above="@id/compactPlayerLayout"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/rvSongList"/>
+
+
+    <include  layout="@layout/minizmedlayout"
+        android:id="@+id/compactPlayerLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- EXPANDED Player -->
+
+    <include  layout="@layout/fragment_playing_song"
+        android:id="@+id/expandedPlayerLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+</RelativeLayout>
+</layout>

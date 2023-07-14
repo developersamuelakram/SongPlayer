@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#1DB954"
+    android:padding="15dp"
+    android:gravity="center">
+
+    <!-- Song Title -->
+    <TextView
+        android:id="@+id/songTitleTextViewMinimized"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Song Title"
+        android:layout_weight="1"
+        android:singleLine="true"
+
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Controls -->
+    <LinearLayout
+        android:id="@+id/controlsLayoutMinimized"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/songTitleTextViewMinimized"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Previous Button -->
+        <ImageView
+            android:id="@+id/previousButtonMinimized"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/previous" />
+
+        <!-- Play/Pause Button -->
+        <ImageView
+            android:id="@+id/playPauseButtonMinimized"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/playwhite" />
+
+        <!-- Next Button -->
+        <ImageView
+            android:id="@+id/nextButtonMinimized"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/upBtn"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:src="@drawable/up" />
+
+</LinearLayout>

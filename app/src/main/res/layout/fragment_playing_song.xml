@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?><!-- activity_main.xml -->
+
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playingSongLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/blackgray"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Top Bar -->
+            <LinearLayout
+                android:id="@+id/topBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <!-- Back Button -->
+                <ImageView
+                    android:id="@+id/downCollapase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down" />
+            </LinearLayout>
+
+            <!-- Album Cover -->
+            <ImageView
+                android:id="@+id/albumCoverImageView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/album" />
+
+            <!-- Song Title -->
+            <TextView
+                android:id="@+id/songTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/albumCoverImageView"
+                android:layout_centerHorizontal="true"
+                android:text="Song Title"
+                android:textColor="#FFF"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Song Artist -->
+            <TextView
+                android:id="@+id/songArtistTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/songTitleTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Artist Name"
+                android:textColor="#FFF"
+                android:textSize="16sp" />
+
+            <!-- Progress Bar -->
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/linearProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/songArtistTextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:progressTint="@color/green"
+                android:thumb="@drawable/thumb"
+                android:thumbTint="@color/green" />
+
+            <!-- Start TextView -->
+            <TextView
+                android:id="@+id/startTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearProgressBar"
+                android:layout_alignStart="@id/linearProgressBar"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="0:10"
+                android:textColor="#FFF"
+                android:textSize="14sp" />
+
+            <!-- End TextView -->
+            <TextView
+                android:id="@+id/endTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearProgressBar"
+                android:layout_alignEnd="@id/linearProgressBar"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+
+                android:text="4:00"
+
+                android:textColor="#FFF"
+
+                android:textSize="14sp" />
+
+            <!-- Controls -->
+            <LinearLayout
+                android:id="@+id/controlsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/endTextView"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <!-- Previous Button -->
+                <ImageView
+                    android:id="@+id/previousButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/previous" />
+
+                <!-- Play/Pause Button -->
+                <ImageView
+                    android:id="@+id/playPauseButton"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/play" />
+
+                <!-- Next Button -->
+                <ImageView
+                    android:id="@+id/nextButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/next" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/controlsLayout">
+
+
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/volumeBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:progressTint="@color/green"
+                    android:thumb="@drawable/thumb"
+                    android:thumbTint="@color/green" />
+
+                <!-- Start TextView -->
+                <ImageView
+                    android:id="@+id/mutVolume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/volumeBar"
+                    android:layout_alignStart="@id/volumeBar"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/lowvolume"
+                    android:textColor="#FFF" />
+
+                <!-- End TextView -->
+                <ImageView
+                    android:id="@+id/fullVolumeImage"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/volumeBar"
+                    android:layout_alignEnd="@id/volumeBar"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/volumefull"
+                    android:textColor="#FFF" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
