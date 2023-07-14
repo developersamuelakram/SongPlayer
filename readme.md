@@ -1,7 +1,7 @@
-#### Music Player - Kotlin | MVVM | Audio Focus 
+### Music Player - Kotlin | MVVM | Audio Focus 
 
 
-##### YouTue Tutorial:  Coming soon
+#### YouTue Tutorial:  Coming soon
 
 ##### APP DEMO
 
@@ -10,7 +10,7 @@
 ![](images/appimage.jpg)
 
 
-##### Features 
+#### Features 
 
 1. Leveraging one music player instance among all the views
 2. Auto switch to next song 
@@ -19,4 +19,4 @@
 5. Raw asset permissions
 
 
-##### Developed by Developer Sam 2023© For collabartion or feedback write me dev.samakram@gmail.com
+#### Developed by Developer Sam 2023© For collabartion or feedback write me dev.samakram@gmail.com
