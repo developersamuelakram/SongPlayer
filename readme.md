@@ -3,9 +3,6 @@
 
 #### YouTue Tutorial:  Coming soon
 
-##### APP DEMO
-
-![](images/demo.gif)
 
 ![](images/appimage.jpg)
 
@@ -18,5 +15,9 @@
 4. Audio focus
 5. Raw asset permissions
 
+
+##### APP DEMO
+
+![](images/demo.gif)
 
 #### Developed by Developer Sam 2023© For collabartion or feedback write me dev.samakram@gmail.com
