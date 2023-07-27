@@ -1,7 +1,7 @@
 ### Music Player - Kotlin | MVVM | Audio Focus 
 
 
-#### YouTue Tutorial:  Coming soon
+#### YouTue Tutorial: https://www.youtube.com/watch?v=AHG8q3_IUO4&list=PLKETiCsEsH0qmGpPcnMgN_bGNGszYaqAG
 
 
 ![](images/appimage.jpg)
